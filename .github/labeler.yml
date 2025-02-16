@@ -1,0 +1,9 @@
+backend:
+  - changed-files:
+    - any-glob-to-any-file:
+      - backend/**
+
+mobile:
+  - changed-files:
+    - any-glob-to-any-file:
+      - mobile/**
