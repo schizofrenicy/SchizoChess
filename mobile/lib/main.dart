@@ -1,7 +1,10 @@
+import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
+import 'package:schizo_chess/chess_game.dart';
 
 void main() {
-  runApp(const MainApp());
+  final game = ChessGame();
+  runApp(GameWidget(game: game));
 }
 
 class MainApp extends StatelessWidget {
