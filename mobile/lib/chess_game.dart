@@ -3,7 +3,7 @@ import 'package:flame/widgets.dart';
 import 'package:schizo_chess/board_field.dart';
 
 class ChessGame extends FlameGame {
-  static const double boardFieldSize = 100.0;
+  static const double boardFieldSize = 100;
 
   @override
   Future<void> onLoad() async {
@@ -18,7 +18,7 @@ class ChessGame extends FlameGame {
       },
     );
 
-    world.addAll(boardFields);
+    await world.addAll(boardFields);
 
     camera.viewfinder.visibleGameSize = Vector2.all(boardFieldSize * 8);
     camera.viewfinder.position = Vector2.all(boardFieldSize * 4);
